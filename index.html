@@ -118,20 +118,19 @@
     }
 
     .flap {
-  position: absolute;
-  z-index: 4;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: min(45vw, 325px) solid transparent;
-  border-right: min(45vw, 325px) solid transparent;
-  border-top: min(30vw, 210px) solid #532019;
-  transform-origin: top;
-  filter: drop-shadow(0 2px 0 #1c0605);
-
-  transition: transform 1.9s cubic-bezier(.55, 0, .1, 1);
-}
+      position: absolute;
+      z-index: 4;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: min(45vw, 325px) solid transparent;
+      border-right: min(45vw, 325px) solid transparent;
+      border-top: min(30vw, 210px) solid #532019;
+      transform-origin: top;
+      filter: drop-shadow(0 2px 0 #1c0605);
+      transition: transform 1.05s cubic-bezier(.55, 0, .1, 1);
+    }
 
     .flap:after {
       content: "";
@@ -276,12 +275,15 @@
     }
 
     .monogram .initial {
-      font-family: "Great Vibes", cursive;
+      font-family: "Cormorant Garamond", serif;
       font-size: clamp(92px, 21vw, 165px);
-      font-weight: 400;
-      line-height: .65;
+      font-weight: 600;
+      line-height: 1;
       color: #f5dfab;
       text-transform: uppercase;
+      font-variant: normal;
+      font-style: normal;
+      display: inline-block;
     }
 
     .monogram .heart {
@@ -462,7 +464,8 @@
       }
 
       .monogram .initial {
-        font-size: clamp(84px, 25vw, 115px)
+        font-size: clamp(84px, 25vw, 115px);
+        line-height: 1;
       }
 
       .arabic-mark {
@@ -512,7 +515,8 @@
       }
 
       .monogram .initial {
-        font-size: 80px
+        font-size: 80px;
+        line-height: 1;
       }
 
       .arabic-mark {
